@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "kamera_flutter",
+            "cwd": "kamera_flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "kamera_flutter (profile mode)",
+            "cwd": "kamera_flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "kamera_flutter (release mode)",
+            "cwd": "kamera_flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "photo_filter_carousel",
+            "cwd": "photo_filter_carousel",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "photo_filter_carousel (profile mode)",
+            "cwd": "photo_filter_carousel",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "photo_filter_carousel (release mode)",
+            "cwd": "photo_filter_carousel",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
