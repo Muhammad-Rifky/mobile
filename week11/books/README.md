@@ -166,4 +166,33 @@ Anda dapat menggunakan FutureGroup dengan Future.wait seperti kode berikut.
     FLeksibelitas, Future.wait lebih sederhana untuk static case, FutureGroup lebih fleksibel untuk skenario dimana Future mungkin ditambahkan atau diubah di runtime
     siklus, Future.wait menyelesaikan ketika semua selesai, FutureGroup memerlukan pemanggilan close() untuk menyelesaikan grup
 
-#
+# PRAKTIKUM 5 : MENANGANI RESPON ERROR PADA ASYNC CODE
+
+## Langkah 1: Buka file main.dart
+Tambahkan method ini ke dalam class _FuturePageState
+
+<img src="images/prak5/1.png">
+
+## Langkah 2: ElevatedButton
+Ganti dengan kode berikut
+
+<img src="images/prak5/2.png">
+
+## Langkah 3: Run
+Lakukan run dan klik tombol GO! maka akan menghasilkan seperti gambar berikut.
+
+<img src="images/prak5/3.png">
+
+Pada bagian debug console akan melihat teks Complete seperti berikut.
+
+<img src="images/prak5/3.1.png">
+
+    Soal 9
+    Capture hasil praktikum berupa GIF dan lampirkan pada README. Lakukan commit dengan pesan "W11:Soal9"
+
+<img src="images/prak5/soal9.gif">
+
+
+## Langkah 4: Tambah method handleError()
+Tambahkan kode ini di dalam class _FutureStatePage
+
