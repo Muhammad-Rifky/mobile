@@ -1,4 +1,4 @@
-# PRAKTIKUM 1
+# PRAKTIKUM 1 : MENGUNGDUH DATA DARI WEB SERVICE (API)
 
 ## Langkah 1: Buat Project Baru
 
@@ -45,7 +45,7 @@ Tambahkan kode pada onPressed di ElevatedButton seperti berikut.
 
 <img src="images/prak1/soal3.gif">
 
-# PRAKTIKUM 2
+# PRAKTIKUM 2 : MENGGUNAKAN AWAIT/ASYNC UNTUK MENGHINDARI CALLBACKS
 ## Langkah 1 : Buka file main.dart
 Tambahkan tiga method berisi kode seperti berikut di dalam class _FuturePageState.
 
@@ -66,7 +66,7 @@ Akhirnya, run atau tekan F5 jika aplikasi belum running. Maka Anda akan melihat 
 
 <img src="images/prak2/soal4.gif">
 
-# PRAKTIKUM 3
+# PRAKTIKUM 3 : MENGGUNAKAN COMPLETER DI FUTURE
 ## Langkah 1: Buka main.dart
 Pastikan telah impor package async berikut.
 
@@ -128,7 +128,42 @@ Ganti menjadi kode seperti berikut.
     Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
     Jawab : 
     ada 3 point penting pembeda antara langkah 2 dan langkah 5-6, error handling yang diberikan pada try-catch, Completer completion yang ada pada langkah 2, dan responsiveness yang diberikan untuk pengguna. 
-    
+
     Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 6".
 
 <img src="images/prak3/soal6.gif">
+
+# PRAKTIKUM 4 : MEMANGGIL FUTURE SECARA PARALEL
+
+## Langkah 1: Buka file main.dart
+Tambahkan method ini ke dalam class _FuturePageState
+
+<img src="images/prak4/1.png">
+
+## Langkah 2: Edit onPressed()
+Anda bisa hapus atau comment kode sebelumnya, kemudian panggil method dari langkah 1 tersebut.
+
+<img src="images/prak4/2.png">
+
+## Langkah 3: Run
+Anda akan melihat hasilnya dalam 3 detik berupa angka 6 lebih cepat dibandingkan praktikum sebelumnya menunggu sampai 9 detik.
+
+<img src="images/prak4/soal7.gif">
+
+    Soal 7
+    Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 7".
+
+## Langkah 4: Ganti variabel futureGroup
+Anda dapat menggunakan FutureGroup dengan Future.wait seperti kode berikut.
+
+<img src="images/prak4/3.png">
+
+    soal 8 
+    jelaskan maksud perbedaan kode langkah 1 dan 4!
+    jawab : 
+    Perbedaan :
+    pendekatan, Future.wait langsung mengumpulkan dalam satu panggilan, sementara FutureGroup memungkinkan penambahan future secara dinamis
+    FLeksibelitas, Future.wait lebih sederhana untuk static case, FutureGroup lebih fleksibel untuk skenario dimana Future mungkin ditambahkan atau diubah di runtime
+    siklus, Future.wait menyelesaikan ketika semua selesai, FutureGroup memerlukan pemanggilan close() untuk menyelesaikan grup
+
+#
