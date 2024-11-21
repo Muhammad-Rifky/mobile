@@ -16,8 +16,9 @@ Jika berhasil install plugin, pastikan plugin http telah ada di file pubspec ini
 
 Ketiklah kode seperti berikut ini.
 
-Soal 1
-Tambahkan nama panggilan Anda pada title app sebagai identitas hasil pekerjaan Anda.
+    Soal 1
+    Tambahkan nama panggilan Anda pada title app sebagai identitas hasil pekerjaan Anda.
+
 <img src="images/5.png">
 
 ## Langkah 4: Tambah method getData()
@@ -26,11 +27,20 @@ Tambahkan method ini ke dalam class \_FuturePageState yang berguna untuk mengamb
 
 <img src="images/4.png">
 
-Soal 2
-Carilah judul buku favorit Anda di Google Books, lalu ganti ID buku pada variabel path di kode tersebut. Caranya ambil di URL browser Anda seperti gambar berikut ini.
+    Soal 2
+    Carilah judul buku favorit Anda di Google Books, lalu ganti ID buku pada variabel path di kode tersebut. Caranya ambil di URL browser Anda seperti gambar berikut ini.
 
 <img src="images/soal2.png">
 
 ## Langkah 5: Tambah kode di ElevatedButton
 Tambahkan kode pada onPressed di ElevatedButton seperti berikut.
 
+<img src="images/7.png">
+
+    Soal 3
+    Jelaskan maksud kode langkah 5 tersebut terkait substring dan catchError!
+    jawab :
+    substring(0,450) = mengambil karakter dari indeks 0 - 450, jika kurang maka akan menyebabkan error.
+    catcherror, jika terjadi kesalan saat memanggil getData(), fungsi ini dipanggil dan menangani error berupa menampilkan pesan error dan memanggil setState untuk update tampilan.
+
+<img src="images/soal3.gif">
