@@ -66,3 +66,69 @@ Akhirnya, run atau tekan F5 jika aplikasi belum running. Maka Anda akan melihat 
 
 <img src="images/prak2/soal4.gif">
 
+# PRAKTIKUM 3
+## Langkah 1: Buka main.dart
+Pastikan telah impor package async berikut.
+
+<img src="images/prak3/1.png">
+
+
+## Langkah 2: Tambahkan variabel dan method
+Tambahkan variabel late dan method di class _FuturePageState seperti ini.
+
+<img src="images/prak3/2.png">
+
+## Langkah 3: Ganti isi kode onPressed()
+Tambahkan kode berikut pada fungsi onPressed(). Kode sebelumnya bisa Anda comment.
+
+<img src="images/prak3/3.png">
+
+## Langkah 4:
+Terakhir, run atau tekan F5 untuk melihat hasilnya jika memang belum running. Bisa juga lakukan hot restart jika aplikasi sudah running. Maka hasilnya akan seperti gambar berikut ini. Setelah 5 detik, maka angka 42 akan tampil.
+
+    Soal 5
+    Jelaskan maksud kode langkah 2 tersebut!
+    Jawab : 
+
+    ```
+    late Completer completer;
+    ```
+    untuk deklarasi Completer (objek yang digunakan untuk membuat Future() diselesaikan)
+
+    ```
+    Future getNumber() {
+        completer = Completer<int>();
+        calculate();
+        return completer.future;
+    }
+    ```
+    untuk membuat instance baru dari Completer<int>, lalu memanggil fungsi calculate() untuk memulai proses asyncrhonous, lalu mengembalikan complater.future, yang merupakan objek Future yang akan menyelesaikan nilainya ketika completer.complete() dipanggil.
+
+    ```
+    Future calculate() async {
+        await Future.delayed(const Duration(seconds: 5));
+        completer.complete(42);
+    }
+    ```
+    fungsi async dan menggunakan Future.delayed untuk menunggu selama nilai yang diberikan (dalam kode ini 5 detik), setelah 5 detik, maka akan memanggil completer.complete(42), menandakan bahwa Future telah selesai dengan nilai 42.
+
+    Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 5".
+
+<img src="images/prak3/soal5.gif">
+
+## Langkah 5: Ganti method calculate()
+Gantilah isi code method calculate() seperti kode berikut, atau Anda dapat membuat calculate2()
+
+<img src="images/prak3/4.png">
+
+## Langkah 6: Pindah ke onPressed()
+Ganti menjadi kode seperti berikut.
+
+    Soal 6
+    Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
+    Jawab : 
+    ada 3 point penting pembeda antara langkah 2 dan langkah 5-6, error handling yang diberikan pada try-catch, Completer completion yang ada pada langkah 2, dan responsiveness yang diberikan untuk pengguna. 
+    
+    Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 6".
+
+<img src="images/prak3/soal6.gif">
