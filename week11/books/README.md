@@ -23,6 +23,14 @@ Tambahkan nama panggilan Anda pada title app sebagai identitas hasil pekerjaan A
 ## Langkah 4: Tambah method getData()
 
 Tambahkan method ini ke dalam class \_FuturePageState yang berguna untuk mengambil data dari API Google Books.
+
 <img src="images/4.png">
 
-## 
+Soal 2
+Carilah judul buku favorit Anda di Google Books, lalu ganti ID buku pada variabel path di kode tersebut. Caranya ambil di URL browser Anda seperti gambar berikut ini.
+
+<img src="images/soal2.png">
+
+## Langkah 5: Tambah kode di ElevatedButton
+Tambahkan kode pada onPressed di ElevatedButton seperti berikut.
+
