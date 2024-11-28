@@ -1,6 +1,7 @@
 import 'dart:async';
-import 'package:books/geolocation.dart';
-import 'package:books/navigation_first.dart';
+//import 'package:books/geolocation.dart';
+import 'package:books/navigation_dialog.dart';
+//import 'package:books/navigation_first.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home:  NavigationFirst(),
+      home:  NavigationDialogScreen(),
+      //home:  NavigationFirst(),
       /*title: 'Rifky harto',
       theme: ThemeData(
           primarySwatch: Colors.blue,

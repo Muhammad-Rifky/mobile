@@ -375,8 +375,45 @@ Lakukan run, jika terjadi error silakan diperbaiki.
 
     Jawab: 
     ketika di klik setiap button, maka background akan berganti sesuai warna yang telah di set pada program.
-    
+
     Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
 
     Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 16".
 <img src="images/prak8/soal16.gif">
+
+# PRAKTIKUM 9 :  MEMANFAATKAN ASYNC/WAIT DENGAN WIDGET DIALOG
+
+## Langkah 1: Buat file baru navigation_dialog.dart
+Buat file dart baru di folder lib project Anda.
+
+<img src="images/prak9/1.png">
+
+## Langkah 2: Isi kode navigation_dialog.dart
+
+<img src="images/prak9/2.png">
+
+## Langkah 3: Tambah method async
+
+<img src="images/prak9/3.png">
+
+## Langkah 4: Panggil method di ElevatedButton
+
+<img src="images/prak9/4.png">
+
+## Langkah 5: Edit main.dart
+Ubah properti home
+<img src="images/prak9/5.png">
+
+## Langkah 6: Run
+Coba ganti warna backgroun dengan widget dialog tersebut. Jika terjadi error, silahkan diperbaiki. Jika berhasil, akan tampil seperti gambar berikut.
+
+<img src="images/prak9/soal17.gif">
+
+    Soal 17
+    Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+
+    Jawab:
+
+    Yang terjadi adalah sama seperti praktikum 8, dimana warna akan berganti sesuai dengan opsi yang dipilih pada dialog.
+    Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!
+    Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 17".
