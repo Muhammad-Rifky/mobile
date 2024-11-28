@@ -338,3 +338,45 @@ Tambahkan kode berikut untuk menangani ketika terjadi error. Kemudian hot restar
 <img src="images/prak7/7.png">
 
     Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 14".
+
+# PRAKTIKUM 8 : NAVIGATION ROUTE DENGAN FUTURE FUNCTION
+## Langkah 1: Buat file baru navigation_first.dart
+Buatlah file baru ini di project lib anda
+## Langkah 2: isi kode navigation_first.dart
+
+<img src="images/prak8/2.png">
+
+    Soal 15
+    Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+    Silakan ganti dengan warna tema favorit Anda.
+
+## Langkah 3: Tambah method di class _navigationFirstState
+tambahkan method ini
+
+<img src="images/prak8/3.png">
+
+## Langkah 4: Buat file baru navigation_second.dart
+Buat file baru ini di project lib Anda. Silakan jika ingin mengelompokkan view menjadi satu folder dan sesuaikan impor yang dibutuhkan.
+
+## Langkah 5: Buat class NavigationSecond dengan StatefulWidget
+
+<img src="images/prak8/5.png">
+
+## Langkah 6: Edit main.dart
+Lakukan edit properti home.
+
+<img src="images/prak8/6.png">
+
+## Langkah 8: Run
+Lakukan run, jika terjadi error silakan diperbaiki.
+
+    Soal 16
+    Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+
+    Jawab: 
+    ketika di klik setiap button, maka background akan berganti sesuai warna yang telah di set pada program.
+    
+    Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
+
+    Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 16".
+<img src="images/prak8/soal16.gif">
